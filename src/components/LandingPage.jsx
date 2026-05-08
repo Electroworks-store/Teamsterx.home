@@ -53,13 +53,13 @@ export default function LandingPage() {
         className="fixed inset-0 h-screen w-screen object-cover object-top pointer-events-none -z-10"
       />
 
-      {/* Hero – takes exactly one viewport height, scrolls away normally */}
-      <div className="relative h-screen w-full flex flex-col items-center overflow-hidden z-10">
+      {/* Hero – extended height to prevent footer overlap */}
+      <div className="relative h-[150vh] w-full flex flex-col items-center z-10 overflow-visible">
 
         {/* ─── Hero Heading ─── */}
         <div
           ref={headingRef}
-          className="text-center mt-[clamp(5rem,14vh,9rem)] px-4"
+          className="text-center pt-32 sm:pt-40 px-4"
         >
           <h1
             className="font-bold leading-tight"
@@ -80,7 +80,7 @@ export default function LandingPage() {
         {/* ─── CTA Buttons ─── */}
         <div
           ref={ctaRef}
-          className="flex flex-wrap items-center justify-center gap-4 mt-6"
+          className="flex flex-wrap items-center justify-center gap-4 mt-4"
         >
           <a
             href="https://app.teamsterx.com/account"
@@ -97,21 +97,21 @@ export default function LandingPage() {
         </div>
 
         {/* ─── Clouds + Dashboard ─── */}
-        <div className="absolute bottom-0 left-0 right-0 flex items-end justify-center">
+        <div className="relative w-screen flex items-center justify-center mt-8 sm:mt-12">
 
-          {/* Clouds – sit behind dashboard */}
+          {/* Clouds – full width, edge to edge */}
           <div
             ref={cloudsRef}
-            className="absolute inset-x-0 bottom-0 flex items-end justify-between pointer-events-none z-[5]"
+            className="absolute inset-x-0 top-0 flex items-start justify-between pointer-events-none z-[5] w-screen"
           >
-            <img src={cloud1} alt="" aria-hidden="true" className="w-[48%] sm:w-[38%] -translate-x-4" />
-            <img src={cloud1} alt="" aria-hidden="true" className="w-[48%] sm:w-[38%] translate-x-4 scale-x-[-1]" />
+            <img src={cloud1} alt="" aria-hidden="true" className="w-1/2 object-cover -translate-x-1/4" />
+            <img src={cloud1} alt="" aria-hidden="true" className="w-1/2 object-cover translate-x-1/4 scale-x-[-1]" />
           </div>
 
-          {/* Dashboard – above clouds */}
+          {/* Dashboard – centered */}
           <div
             ref={dashboardRef}
-            className="relative z-[10] w-full max-w-5xl px-6 sm:px-12"
+            className="relative w-full max-w-5xl px-6 sm:px-12 z-[10]"
           >
             <img
               src="/img/teamster.png"

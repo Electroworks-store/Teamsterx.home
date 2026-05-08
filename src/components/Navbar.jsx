@@ -59,7 +59,7 @@ export default function Navbar() {
           <div className="flex items-center gap-3">
             {/* Login Button (visible on all sizes) */}
             <a
-              href="#login"
+              href="https://app.teamsterx.com/account"
               className="hidden sm:inline-flex items-center gap-2 px-5 py-2 bg-[#4AABF0] text-white font-medium rounded-full hover:bg-[#3a9be0] transition-colors text-sm group"
             >
               Log In
@@ -110,7 +110,7 @@ export default function Navbar() {
               ))}
               {/* Mobile Login Button */}
               <a
-                href="#login"
+                href="https://app.teamsterx.com/account"
                 className="flex items-center justify-center gap-2 w-full px-5 py-2 bg-[#4AABF0] text-white font-medium rounded-full hover:bg-[#3a9be0] transition-colors text-center sm:hidden text-sm group"
                 onClick={() => setIsOpen(false)}
               >
