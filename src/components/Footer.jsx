@@ -80,9 +80,15 @@ export default function Footer() {
         <div className="border-t border-gray-200" />
 
         {/* Bottom bar */}
-        <p className="py-5 text-center text-sm text-gray-400">
-          © {new Date().getFullYear()} TeamsterX. All rights reserved.
-        </p>
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-2 py-5">
+          <p className="text-sm text-gray-400">
+            © {new Date().getFullYear()} TeamsterX. All rights reserved.
+          </p>
+          <div className="flex gap-4 text-sm text-gray-400">
+            <a href="/terms/index.html" className="hover:text-[#4AABF0] transition-colors">Terms of Service</a>
+            <a href="/privacy/index.html" className="hover:text-[#4AABF0] transition-colors">Privacy Policy</a>
+          </div>
+        </div>
       </div>
     </footer>
   );

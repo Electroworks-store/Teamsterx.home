@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy - Teamsterx</title>
+  <link rel="icon" href="/img/favicon-circle.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    :root {
+      --bg-page: #f5f5f7;
+      --bg-surface: #ffffff;
+      --text-primary: #1d1d1f;
+      --text-secondary: #6e6e73;
+      --border-color: #d2d2d7;
+      --accent: #0A84FF;
+      --link-color: #0A84FF;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg-page);
+      color: var(--text-primary);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+    .page-header {
+      background: #ffffff;
+      border-bottom: 1px solid var(--border-color);
+      padding: 16px 24px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: var(--link-color);
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px 10px;
+      border-radius: 6px;
+      text-decoration: none;
+    }
+    .back-btn:hover { background: rgba(10,132,255,0.08); }
+    .page-header-title {
+      font-size: 15px;
+      font-weight: 600;
+      margin: 0 auto;
+      padding-right: 80px;
+    }
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .doc-title {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+    .doc-subtitle {
+      font-size: 14px;
+      color: var(--text-secondary);
+      margin-bottom: 40px;
+    }
+    h2 {
+      font-size: 18px;
+      font-weight: 600;
+      margin-top: 36px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 14px;
+    }
+    ul, ol {
+      padding-left: 20px;
+      margin-bottom: 14px;
+    }
+    li {
+      font-size: 15px;
+      color: var(--text-secondary);
+      margin-bottom: 6px;
+    }
+    a { color: var(--link-color); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .divider {
+      border: none;
+      border-top: 1px solid var(--border-color);
+      margin: 32px 0;
+    }
+    .callout {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: 10px;
+      padding: 16px 20px;
+      margin-bottom: 14px;
+    }
+    .callout p { margin-bottom: 0; }
+  </style>
+</head>
+<body>
+
+  <div class="page-header">
+    <a href="javascript:history.back()" class="back-btn">
+      <i class="fas fa-arrow-left"></i> Back
+    </a>
+    <span class="page-header-title">Privacy Policy</span>
+  </div>
+
+  <div class="container">
+    <h1 class="doc-title">Privacy Policy</h1>
+    <p class="doc-subtitle">Last updated: May 2026 &nbsp;&bull;&nbsp; Effective for all Teamsterx users</p>
+
+    <div class="callout">
+      <p><strong>Summary:</strong> Teamsterx is an internal team collaboration tool. We collect only what's needed to provide the service, we don't sell your data, and your team's data stays yours.</p>
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>Teamsterx ("we", "our", or "us") is an internal business collaboration platform. This Privacy Policy explains how we collect, use, and protect information when you use Teamsterx.</p>
+
+    <h2>2. Information We Collect</h2>
+    <p>We collect information you provide directly and information generated through your use of the service:</p>
+    <ul>
+      <li><strong>Account information</strong> — your name, email address, and password (stored securely via Firebase Authentication).</li>
+      <li><strong>Profile data</strong> — display name, job title, and profile photo you choose to add.</li>
+      <li><strong>Team content</strong> — tasks, documents, spreadsheets, calendar events, chat messages, financial data, leads, and other content you create within Teamsterx.</li>
+      <li><strong>Usage data</strong> — actions within the app (e.g., tasks completed, login timestamps) used for features like XP, streaks, and badges.</li>
+      <li><strong>Device &amp; browser data</strong> — basic technical information (browser type, device type, IP address) collected automatically when you access the service for security and diagnostic purposes.</li>
+    </ul>
+
+    <h2>3. How We Store Your Data</h2>
+    <p>Your data is stored using the following third-party infrastructure providers:</p>
+    <ul>
+      <li><strong>Firebase (Google)</strong> — authentication, real-time database (Firestore), and file storage. Data is subject to <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Google's privacy practices</a>.</li>
+      <li><strong>Supabase</strong> — used for real-time chat messages and related features. Data is subject to <a href="https://supabase.com/privacy" target="_blank" rel="noopener">Supabase's privacy policy</a>.</li>
+    </ul>
+    <p>Data is stored in secure cloud environments with access restricted to authenticated team members through enforced security rules.</p>
+
+    <h2>4. How We Use Your Information</h2>
+    <p>We use the information we collect to:</p>
+    <ul>
+      <li>Provide, maintain, and improve the Teamsterx service.</li>
+      <li>Authenticate your identity and maintain your session.</li>
+      <li>Sync your team's content in real time across devices.</li>
+      <li>Enable team collaboration features (chat, shared tasks, documents, etc.).</li>
+      <li>Send account-related emails (password resets, email verification).</li>
+      <li>Calculate XP, streaks, and badge milestones (if gamification is enabled).</li>
+      <li>Diagnose bugs and improve performance.</li>
+    </ul>
+
+    <h2>5. Data Sharing</h2>
+    <p>We do <strong>not</strong> sell, rent, or share your personal information with third parties for advertising or marketing purposes.</p>
+    <p>We may share data only in the following limited circumstances:</p>
+    <ul>
+      <li><strong>Within your team</strong> — content you create (tasks, docs, messages) is visible to other members of your team as intended by the product.</li>
+      <li><strong>Service providers</strong> — our infrastructure providers (Firebase, Supabase) process data on our behalf under their respective data processing agreements.</li>
+      <li><strong>Legal requirements</strong> — if required by law, court order, or governmental authority.</li>
+    </ul>
+
+    <h2>6. Private Content</h2>
+    <p>Documents, sheets, and tasks marked as <strong>Private</strong> are only accessible to their creator. Other team members, including Admins and Owners, cannot view private content through the application interface.</p>
+
+    <h2>7. Data Retention</h2>
+    <p>Your data is retained for as long as your account exists and your team remains active. If you leave a team, your personal profile data is retained but your team-specific content remains with the team. If a team is deleted, all associated data is permanently removed from our systems.</p>
+    <p>You may request deletion of your account and associated data by contacting us (see Section 11).</p>
+
+    <h2>8. Cookies &amp; Local Storage</h2>
+    <p>Teamsterx uses browser <strong>localStorage</strong> and <strong>sessionStorage</strong> to store application preferences (such as your theme setting, sidebar state, and session tokens). We do not use third-party advertising cookies.</p>
+
+    <h2>9. Security</h2>
+    <p>We take reasonable technical and organizational measures to protect your data, including:</p>
+    <ul>
+      <li>Firestore security rules that enforce team membership checks on all read/write operations.</li>
+      <li>Firebase Authentication with secure password hashing.</li>
+      <li>HTTPS encryption in transit for all data.</li>
+      <li>Row-level security (RLS) policies on Supabase for chat data.</li>
+    </ul>
+    <p>No system is completely secure. We encourage you to use a strong, unique password for your account.</p>
+
+    <h2>10. Children's Privacy</h2>
+    <p>Teamsterx is designed for business and professional use. We do not knowingly collect personal information from anyone under the age of 16. If you believe a minor has provided us with personal information, please contact us and we will promptly delete it.</p>
+
+    <h2>11. Your Rights</h2>
+    <p>Depending on your location, you may have the right to:</p>
+    <ul>
+      <li>Access the personal data we hold about you.</li>
+      <li>Request correction of inaccurate data.</li>
+      <li>Request deletion of your account and data.</li>
+      <li>Object to or restrict certain processing of your data.</li>
+      <li>Data portability (receive a copy of your data in a machine-readable format).</li>
+    </ul>
+    <p>To exercise any of these rights, please contact us using the information in Section 12.</p>
+
+    <h2>12. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. When we do, we will update the "Last updated" date at the top of this page. Continued use of Teamsterx after changes are posted constitutes your acceptance of the updated policy.</p>
+
+    <hr class="divider" />
+
+    <p style="font-size: 14px; color: var(--text-secondary);">
+      If you have any questions about this Privacy Policy, please contact the team owner or administrator of your Teamsterx workspace.
+    </p>
+    <p style="margin-top: 12px;">
+      <a href="/terms/index.html">Terms of Service</a>
+    </p>
+  </div>
+
+</body>
+</html>
